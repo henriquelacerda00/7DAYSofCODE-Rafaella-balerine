@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const area = prompt("você quer seguir para a area do 'back-end' ou 'front-end'? digite o nome da area:");
+        let linguagem = ""
+        if area === ("front-end"){
+            linguagem = prompt("você quer aprender react ou vue ?");
+        }
+        else if area === ("back-end"){
+            linguagem = prompt("você quer aprender c# ou java ?")
+        }
+        else {
+            alert("você não inseriu uma area válida")
+        }
+        const especialidadeOuFullstack = prompt("Digite 1 para seguir se especializando na área escolhida ou 2 para seguir se desenvolvendo para se tornar Fullstack");
+if (especialidadeOuFullstack == 1){
+    alert(`Continue se especializando em ${linguagem} para dominar a área de ${area}!`);
+}
+else if (especialidadeOuFullstack == 2){
+    alert(`Chegou a hora de começar a aprender outras linguagens além de ${linguagem} se você quer se tornar Fullstack!`);
+}
+else {
+    alert("Você não inseriu um valor válido!");
+}
+
+let msg = prompt("Tem mais alguma tecnologia que você gostaria de aprender? Digite 'ok' em caso positivo.");
+while (msg === "ok"){
+    let novaTecnologia = prompt("Qual?");
+    alert(`${novaTecnologia} é realmente uma tecnologia muito legal!`)
+    msg = prompt("Tem mais alguma tecnologia que você gostaria de aprender? Digite 'ok' em caso positivo.");
+}
+    </script>
+    
+</body>
+</html>
